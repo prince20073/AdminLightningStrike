@@ -116,7 +116,7 @@ public class AdminLightningStrike implements ModInitializer {
                 continue;
             }
 
-            Attack attach = entry.getValue();
+            Attack attack = entry.getValue();
             if (attack.ticksUntilNext > 0) {
                 attack.ticksUntilNext--;
                 continue;
