@@ -14,7 +14,7 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.damagesource.DamageTypes;
-import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.EntityTypes;
 import net.minecraft.world.entity.EntitySpawnReason;
 import net.minecraft.world.entity.LightningBolt;
 
@@ -136,7 +136,7 @@ public class AdminLightningStrike implements ModInitializer {
         ServerLevel level = (ServerLevel) target.level();
 
         // Visual-only bolt: renders and plays thunder, but never ignites blocks or entities.
-        LightningBolt bolt = EntityType.LIGHTNING_BOLT.create(level, EntitySpawnReason.TRIGGERED);
+        LightningBolt bolt = EntityTypes.LIGHTNING_BOLT.create(level, EntitySpawnReason.TRIGGERED);
         if (bolt != null) {
             bolt.setPos(target.getX(), target.getY(), target.getZ());
             bolt.setVisualOnly(true);
