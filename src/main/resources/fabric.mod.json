@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "adminlightningstrike",
+  "version": "${version}",
+  "name": "AdminLightningStrike",
+  "description": "Admin-only /strike command: cinematic, fire-free lightning that damages a player down to exactly 1 heart, never killing them.",
+  "authors": ["AdminLightningStrike"],
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["com.adminlightningstrike.AdminLightningStrike"]
+  },
+  "depends": {
+    "fabricloader": ">=0.19.5",
+    "minecraft": "~26.3",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}
